@@ -1,0 +1,269 @@
+import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
+*.{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font family: "Poppins", san-serif;
+    list-style: none;
+}
+
+/*header section*/
+header .container{
+    background-color: rgb(216, 85, 24);
+    position:fixed;
+    z-index: 99; /*stck elements to bring them to the front or the back...when working with position*/
+    width: 100%;
+    min-width:cover;
+    /*min-block-size: 5%;*/
+    height:fixed;
+    padding:2% 3%;
+    /*display:flex; consider flex & unflexed*/ /*helps make a responsive website without the use of float & position*/
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: wrap;
+    /*overflow: scroll;*/
+    flex-shrink: 0;
+}
+
+nav{
+    /*ul & li*/
+    flex:-1;
+    /*-ms-flex-item-align:*/
+}
+nav ul{
+    display: flex;
+    justify-content: right;
+    gap: 5em;
+    flex-grow: wrap;
+    border-radius: 35px;
+   /* overflow: auto;
+    flex-shrink: 0;*/
+}
+nav ul li{
+    flex-grow: 1;
+}
+nav ul li:first-child{
+    margin-left:50px;
+    padding-right:10px;
+}
+nav ul li:last-child{
+    margin-left:20px;
+    padding-right: 200px;
+}
+
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    /*white-space:break-spaces;*/
+    justify-content: center;
+        overflow: auto;
+    flex-shrink: 0;
+}
+/*nav ul li a{
+    color: white
+    text-decoration: none;
+    font-size: 1.1
+
+}*/
+.logo a {
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+}
+.logo a h1{
+    background-color:none;
+    border-radius: 5%;
+    width: 1.3em;
+    height: 1.5em;
+    /*text-align: center;*/
+    display: inline-block;
+    text-align: center;
+    padding-top: 2em;
+}
+
+.button{
+    margin-left: 2em;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.button a button{
+    background-color: aqua;
+    border: none;
+    padding: 1em 2em;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+}
+
+.button a button:hover {
+
+background-color: orange;
+}
+.other{
+    font-size: 5rem;
+    color:bisque;
+
+}
+/*HERO-SECTION*/
+.hero-section {
+    background-image: url(./Screenshot_2023-11-28-08-16-04-879_lockscreen.jpg);
+    background-size: cover;
+    height: 100%;
+    background-repeat: repeat;
+    background-position: center center;
+    position: relative;
+    z-index: -1;
+    padding: 80em 4em 2em;
+    text-decoration: none;
+}
+.hero-section::after {
+        content: "";
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0.0.0.6);
+}
+
+/*.hero-text{
+    color: black;
+    padding: 2;
+}*/
+
+.hero-text h1{
+    color: rgb(108, 11, 11);
+    font-family: Poppins;
+    font-size: 10rem;
+    padding-bottom: 3%;
+    font-weight: bold;
+    word-wrap: break-word;
+    break-after: always;
+    word-break: keep-all;
+    position: relative;
+    text-decoration: none;
+}
+.discover {
+    display: flex;
+    gap: 2em;
+}
+.discover a button{
+    background-color: orangered;
+    border: 2px solid white;
+    padding: 1em 2.5rem;
+    color: white;
+    font-weight: bold;
+    font-size: 1.1 rem
+}
+
+.discover a .container{
+    background-colour: orange;
+    color: white;
+}
+/*SERVICES SECTION*/
+.service-section{
+    min-height: 600px;
+    z-index: -1;
+    padding: 2em 4em 2em;
+}
+
+.offset{
+    padding-left: 0em
+}
+
+.service{
+    background-color: #fef8f5;
+    padding: 5em 20em 5em;
+}
+.heading{
+    text-align: center;
+}
+.heading p{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.heading h1{
+    color: gray;
+}
+.service-container{
+    display: flex;
+    justify-content: center;
+
+    gap: 5em;
+    margin: 2em 0 0;
+}
+
+.service-container .service{
+    padding: 2em;
+    height: relative;
+    border-radius: 10px;
+    text-align: center;
+    flex-grow: wrap;
+    background-color: white;
+}
+.service-container .service h4{
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+.service-container .service p{
+    font-size: 1.3rem;
+    line-height: 2;
+    */padding-top: 1.3rem;
+    word-break: keep-all;
+    break-after: always;*/
+
+}
+.service-container .service i{
+    color: black;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+/*PORTFOLIO SECTION*/
+.portfolio{
+
+    justify-content: center;
+    height:auto
+    max-content: 50%;
+    gap: 5em;
+    padding-left: 500px;
+}
+.portfolios .portfolios-container{
+    display: flex;
+    max-width: 100%;
+}
+
+.headin{
+    text-align:center;
+    margin-left: -500px
+}
+.headin h1{
+    font-size: 2.3rem;
+    color: gray;
+}
+
+.portfolios .portfolios-container{
+    justify-content: center;
+    border-radius: 25px;
+    gap: 5em;
+    margin: 2em 0 0;
+}
+
+.portfolios .portfolios-container .line{
+    height: auto;
+    max-width: 75%;
+    justify-content: space-between;
+    padding-right: 5em;
+    flex-grow: 1;
+}
